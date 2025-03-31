@@ -11,21 +11,36 @@
 </head>
 <body>
     <nav id="desktop-nav">
-
-        <div class="logo">
-            Kirill Antonevich
-        </div> 
-
-        <div>
-            <ul class="nav-list">
-                <li><a href="#about">About</a></li>
-                <li><a href="#porfolio">Portfolio</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+            <div class="logo">My Logo</div>
+            <div>
+                <ul class="nav-list">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#experience">Eperience</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
         </div>
-
     </nav>
-    <script src="navigation.js"></script>
+    <nav id="hamburgMenu">
+        <div class="logo">My Logo</div>
+        <div class="hamburger-meniu">
+            <div class="hamburger-icon" onclick="ToggleMeniu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+
+                    <li><a href="#home" onclick="ToggleMeniu()">Home</a></li>
+                    <li><a href="#experience" onclick="ToggleMeniu()">Eperience</a></li>
+                    <li><a href="#about" onclick="ToggleMeniu()">About</a></li>
+                    <li><a href="#contact" onclick="ToggleMeniu()">Contact</a></li>
+               
+            </div>
+        </div>
+    </nav>
+    <script src="navigation.js">
+
+    </script>
 </body>
 </html>
