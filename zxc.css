@@ -34,6 +34,7 @@
 
 body {
    display: flex;
+   align-content:flex-start;
    font-family: "Poppins", sans-serif;
    font-weight: 300;
    font-style: normal;
@@ -64,7 +65,7 @@ nav {
     justify-content: space-around; 
     align-items: center;
     height: 17vh;
-    width: 100%;
+
 }
 
 .nav-list {
@@ -153,13 +154,13 @@ a:hover{
   max-height: 300px;
 }
 
-.hamburger-icon span:first-child{
+.hamburger-icon.open span:first-child{
   transform: rotate(45deg) translate(10px, 5px);
 }
-.hamburger-icon span:nth-child(2){
-  opacity: 1;
+.hamburger-icon.open span:nth-child(2){
+  opacity: 0;
 }
-.hamburger-icon span:last-child{
+.hamburger-icon.open span:last-child{
   transform: rotate(-45deg) translate(10px, -5px);
 }
 
@@ -171,4 +172,70 @@ a:hover{
 }
 .hamburger-icon span:first-child{
   transform: none;
+}
+
+/* SECTIONS */
+
+section{
+  padding-top: 4vh;
+  height: 96vh;
+  margin: 0 10rem;
+  box-sizing: border-box;
+  min-height: fit-content;
+}
+
+.section-container {
+  display: flex
+}
+
+
+/* PROFILE SECTION */
+
+#intro-section{
+  display: flex;
+  
+  justify-content: center;
+  gap: 5rem;
+  height: 80vh;
+}
+
+.section_pic-container{
+  display: flex;
+  height: 400px;
+  width: 400px;
+  margin: auto 0;
+}
+
+.section__text{
+  align-self: center;
+  text-align: center;
+}
+
+.section__text p{
+  font-weight: 600;
+}
+.title{
+  text-align: center;
+}
+
+.title{
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+}
+
+.name{
+  font-size: 3rem;
+  text-align: center;
+}
+
+#sotial-profiles{
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+  gap: 1rem;
+}
+
+.icon{
+  cursor: pointer;
+  height: 2rem;
 }

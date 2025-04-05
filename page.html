@@ -11,7 +11,7 @@
 </head>
 <body>
     <nav id="desktop-nav">
-            <div class="logo">My Logo</div>
+            <div class="logo">Kirill Antonevich</div>
             <div>
                 <ul class="nav-list">
                     <li><a href="#home">Home</a></li>
@@ -22,25 +22,57 @@
         </div>
     </nav>
     <nav id="hamburgMenu">
-        <div class="logo">My Logo</div>
-        <div class="hamburger-meniu">
-            <div class="hamburger-icon" onclick="ToggleMeniu()">
+        <div class="logo">Kirill Antonevich</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
                 <span></span>
                 <span></span>
                 <span></span>
             </div>
             <div class="menu-links">
 
-                    <li><a href="#home" onclick="ToggleMeniu()">Home</a></li>
-                    <li><a href="#experience" onclick="ToggleMeniu()">Eperience</a></li>
-                    <li><a href="#about" onclick="ToggleMeniu()">About</a></li>
-                    <li><a href="#contact" onclick="ToggleMeniu()">Contact</a></li>
+                    <li><a href="#home" onclick ="toggleMenu()">Home</a></li>
+                    <li><a href="#experience" onclick ="toggleMenu()">Eperience</a></li>
+                    <li><a href="#about" onclick ="toggleMenu()">About</a></li>
+                    <li><a href="#contact" onclick ="toggleMenu()">Contact</a></li>
                
             </div>
         </div>
     </nav>
-    <script src="navigation.js">
+    <section id="intro-section">
+        <div class="section_pic-container">
+            <img src="./images/photo_Kiril_roundl.png" alt="Here is photo of Kirill Antonevich" />
+        </div>
 
-    </script>
+        <div class="section__text">
+
+            <p class="title">Hello I'm</p>
+            <h1 class="name">Kirill Antonevich</h1>
+            <p class="section__text__p2">Frontend Developer</p>
+
+            <div class="btn_container">
+
+                <button class="btn btn-color-1" onclick = " window.open('./images/')">Dovload CV</button>
+                
+                <button class="btn btn-color-2" onclick = "location.href='./#contact'">Get link</button>
+            </div>
+
+            <div id="sotial-profiles">
+                
+                <img src="./images/linkedin-with-circle-icon-2048x2048-np6yltn1.png" 
+                 alt="Mine Linkdin profile"
+                 class="icon"
+                 onclick="location.href=''">
+                 
+                <img src="./images/Untitled.jpeg" 
+                 alt="Mine Linkdin profile"
+                 class="icon"
+                 onclick="location.href=''">
+            
+            </div>
+        </div>
+    </section>
+    <script src="navigation.js"></script>
+
 </body>
 </html>
